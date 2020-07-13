@@ -1,13 +1,25 @@
 //You can mix integers, floats, strings inside a single array
 //You can nest as much arrays as you want and access them by [0][0][0]...
+
 const x = [1,0.5,-5,-0.3];
 console.log(x[2]);
 //Prints -5 
+
 const a = 'Peanut Butter'
 const y = ['Peanuts',1,0.5,-6,-0.0008,a];
 console.log(y[5]);
 //Prints the value in a (Peanut Butter)
-const z = [['Food',['Pizza']],['Candy',['Cookie','Pie']]];
+
+const z = [
+    [
+        'Food',
+        ['Pizza']
+    ],
+    [
+        'Candy',
+        ['Cookie','Pie']
+    ]
+];
 console.log(z[0][0]);
 //Prints Food
 console.log(z[1][0]);
