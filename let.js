@@ -2,6 +2,8 @@
 //If you try to use a let variable before declaration, you'll get a Reference Error, because they are not hoisted
 //It's block scoped: it is known and defined only inside the block, so it's out of scope any place outside the block it is declared
 //The block is defined by the squiggly brackets {}, everything inside it is part of the block
+//Doesn't let you use same variable name(identifier) in same scope, resulting in an error 
+
 function example() {
     console.log('Calling c here will result in an error');
     {
