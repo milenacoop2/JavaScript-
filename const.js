@@ -7,8 +7,14 @@ function example() {
     {
       const p = 'yummy';
       console.log('value of variable inside the block: ', p)
+      const b = `strawberry ${p} pie` 
+      console.log(b);
     }
 }
 example()
+
+const whenHungry = (str = 'strawberry') => `yummy ${str} pie`
+console.log(whenHungry());
+console.log(whenHungry('lemon'));
 //You can't do "p = p + ' ' + 'strawberry pie';" or "const p = anothervalue"
 //You also can't call const outside the block, because it will return an error
